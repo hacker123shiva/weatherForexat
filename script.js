@@ -5,16 +5,6 @@ const weatherApi = {
   baseUrl: 'https://api.openweathermap.org/data/2.5/weather',
 };
 
-//anonymous function
-//adding event listener key press of enter
-// let searchInputBox = document.getElementById('input-box');
-// searchInputBox.addEventListener('keypress', (event) => {
-//   if (event.keyCode == 13) {
-//     // console.log(searchInputBox.value);
-//     getWeatherReport(searchInputBox.value);
-//   }
-// });
-
 document.getElementById('search-button').addEventListener('click', function () {
   // Get the input box element
   let searchInputBox = document.getElementById('input-box');
@@ -164,7 +154,7 @@ function changeBg(status) {
   } else if (status === 'Mist' || status === 'Haze' || status === 'Fog') {
     document.body.style.backgroundImage = 'url(img/mist.jpg)';
   } else {
-    document.body.style.backgroundImage = 'url(img/bg.jpg)';
+    document.body.style.backgroundColor = 'url(img/bg.jpg)';
   }
 }
 
